@@ -1,6 +1,5 @@
 # Bit Manipulation and Everything about bits and binary number system
 
-<br>
 ## INDEXING
 *Index:* 7 6 5 4 3 2 1 0 -> **The indexing starts from right to left**  
 *Bits:*&nbsp;&nbsp;&nbsp;1 1 1 1 1 0 0 0  
