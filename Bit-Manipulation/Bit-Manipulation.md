@@ -62,7 +62,7 @@ we take **xor** operator between the given binary number and 1 &lt;&lt; i.<br><b
 The binary representation of all the lower case letters has the **fifth bit** set but in case of upper case letters the fifth bit is unset.<br>
 **Example:**<br>
 	- *To change the alphabet to lower case:* We take the **or** opeartor with the alphabet and (1 &lt;&lt; 5). This is to set the 5th bit. **(1 &lt;&lt; 5) -> ' '**<br>
-	- *To change the alphabet to upper case:* We take the **and** opearator with the alphabet and reverse or ~(1 &lt;&lt; 5). This is to unset the 5th bit. **~(1 &lt;&lt; 5) -> '_'**<br><br>
+	- *To change the alphabet to upper case:* We take the **and** opearator with the alphabet and reverse or \~(1 &lt;&lt; 5). This is to unset the 5th bit.**\~(1 &lt;&lt; 5) -> '_'**<br><br>
 - **To remove the LSB till a given index:**<br>
 **Given Binary:**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 0 0 0 1 1 1 0 1 0 1<br>
 **We want to make it as:**   0 0 0 0 1 1 0 0 0 0 0 -> *we want to clear the LSB till index 4*<br>
