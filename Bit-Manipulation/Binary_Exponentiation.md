@@ -1,5 +1,5 @@
 # Binary Exponentiation
-<br>
+
 ## WHY?
 To calculate the power of an integer in coding world we generally use the builtin function of pow(a,b) in c++. But the problem arises because the pow() function returns the result in double data type and as we know that the double data type can store large data but the precesion is very low. Thus to solve the problem of overflow and precesion we use binary exponentiation.<br><br>
 ## IMPLEMENTATION
@@ -19,8 +19,7 @@ Now if we would have tried to solve the above problem using simple method using 
 3<sup>6</sup> = 3<sup>3</sup> * 3<sup>3</sup><br>
 3<sup>3</sup> = 3 * 3<sup>2</sup><br>
 3<sup>2</sup> = 3<sup>1</sup> * 3<sup>1</sup><br>
-3<sup>1</sup> = 3 * 3<sup>0</sup><br>
-<br>
+3<sup>1</sup> = 3 * 3<sup>0</sup><br><br>
 ## RECURSIVE
 If we try to implement the solution using recursion then we will divide the function f(a,b) into f(a,b/2) where f(a,b) = a<sup>b</sup> and we go on untill the value of b becomes 0.<br><br>
 **Code:**
@@ -39,8 +38,7 @@ int RecursiveBinaryExponentiation(int a, int b)
 	{
 		return res * res;
 	}
-}</pre>
-<br>
+}</pre><br>
 ## ITERATIVE
 Iterative way is generally faster and more efficient than the recursive method and we should always prefer the iterative way over the recursive one.<br><br>
 **Method:**<br>
@@ -52,7 +50,7 @@ Let's calculate the value of 3<sup>13</sup> then: <br>
   <tr>
     <th>a</th>
     <th>b</th>
-    <th>ans (*Default value = 1*)</th>
+    <th>ans (<I>Default value = 1</I>)</th>
   </tr>
   <tr>
     <td>3</td>
@@ -74,9 +72,8 @@ Let's calculate the value of 3<sup>13</sup> then: <br>
     <td>1</td>
     <td>3<sup>13</sup></td>
   </tr>
-</table>
-<br>
-**Code:**
+</table><br>
+<b>Code:</b>
 <pre>
 int IterativeBinaryExponentiation(int a, int b)
 {
@@ -93,4 +90,4 @@ int IterativeBinaryExponentiation(int a, int b)
 	return ans;
 }
 </pre>
----
+<hr>
