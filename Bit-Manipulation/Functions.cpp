@@ -102,4 +102,33 @@ public:
 
         n1 = n1 ^ n2; //assigns n2 to n1
     }
+
+    long long IterativeBinaryExponentiation(long long a, long long b)
+    {
+    	long long ans = 1;
+    	while(b)
+    	{
+    		if(b&1)
+    		{
+    			ans = binaryMultiply(ans, a);
+    		}
+    		a = binaryMultiply(a, a);
+    		b >>= 1;
+    	}
+    	return ans;
+    }
+    long long binaryMultiply(long long a, long long b)
+	{
+		long long ans = 0;
+		while(b)
+		{
+			if(b&1)
+			{
+				ans = (ans + a)%M;
+			}
+			b >>= 1;
+			a = (a + a)%M;
+		}
+		return ans;
+	}
 };
